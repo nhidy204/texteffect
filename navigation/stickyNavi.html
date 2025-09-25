@@ -17,19 +17,19 @@
             top: 0;
             padding: 5px;
             border: 2px solid black;
-        }
-        ul li {
-            float: left;
-        }
-        ul li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        ul li a:hover {
-            background-color: #111;
+            
+            li {
+                a {
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+                &:hover {
+                    background-color: #111;
+                }
+            }
         }
         .box{
             width: 400px;
@@ -37,19 +37,31 @@
             border: 1px solid black;
             overflow: scroll;
         }
+        div {
+            p {
+            margin: 20px;
+            text-indent: 10px;
+            } 
+            h1 {
+            margin: 20px;
+            text-align: center;
+            }
+        }
         
     </style>
 </head>
 <body>
 <div class="box">
     <h1>Learn the SCSS (Sass) Basics in 5 Minutes</h1>
-    <p>If you’re reading this that probably means you are familiar with CSS and have heard of SCSS or Sass but haven’t yet taken a dive.
+    <p style="font-style: italic;">If you’re reading this that probably means you are familiar with CSS and have heard of SCSS or Sass but haven’t yet taken a dive.
     </p>
-    <ul class="sticky">
+    <ul class="sticky" style="display: flex; justify-content: center;">
         <li><a href="#">dao</a></li>
         <li><a href="#">yen</a></li>
         <li><a href="#">nhi</a></li>
         <li><a href="#">dyn</a></li>
+        <li><a href="#">yen</a></li>
+        <li><a href="#">nhi</a></li>
     </ul>
     <p>Well good news. Sass is going to make your life much better.
         You will finally be able to DRY (Do not Repeat Yourself) your code out in CSS.
