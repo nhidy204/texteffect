@@ -25,8 +25,10 @@
             text-overflow: ellipsis;
             overflow: hidden;
             font-size: 65px;
-            white-space: nowrap;
             word-wrap: break-word;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
         }
     </style>
 </head>
@@ -34,7 +36,7 @@
 <div class="coop">
     <p class="full">abcdefghij</p>
     <p> </p>
-    <p class="not-full">abcdefghij</p>
+    <p class="not-full">abcdefghijabcdefghij</p>
 </div>
 </body>
 </html>
