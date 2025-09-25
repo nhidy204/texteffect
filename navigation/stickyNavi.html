@@ -42,10 +42,8 @@
 </head>
 <body>
 <div class="box">
-    <h1>Some text to enable scrolling..</h1>
-    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo.
-        Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-        Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+    <h1>Learn the SCSS (Sass) Basics in 5 Minutes</h1>
+    <p>If you’re reading this that probably means you are familiar with CSS and have heard of SCSS or Sass but haven’t yet taken a dive.
     </p>
     <ul class="sticky">
         <li><a href="#">dao</a></li>
@@ -53,45 +51,56 @@
         <li><a href="#">nhi</a></li>
         <li><a href="#">dyn</a></li>
     </ul>
-    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo.
-        Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-        Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+    <p>Well good news. Sass is going to make your life much better.
+        You will finally be able to DRY (Do not Repeat Yourself) your code out in CSS.
     </p>
-    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo.
-        Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-        Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+    <p>Basically, CSS is missing some great features that would help turn it into an easier to use and read. 
+        Sass adds Variables, Nesting, Partials, Mixins, Extend/Inheritance, and Operators.
+        Some of these are things that programming languages tend to have. If you don’t know what some of them are, that’s okay.
+        We’re going to define each of these and show you how they can be used.
     </p>
-    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo.
-        Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-        Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+    <p>A Sass can be compiled into a CSS files making it writing many files easy.
+        If you are using create react app you are in luck because the processing part is already taken care of for you. 
+        If not you can use Grunt or Gulp to process your Sass/SCSS files into CSS. 
+        If you are not yet in an environment that will do this I suggest setting that up first. 
+        This article is to talk about the features of Sass and how to use them.
     </p>
-    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo.
-        Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-        Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+    <p>What’s the difference between Sass and SCSS. 
+        Well, both of them can be compiled into CSS. 
+        The real difference is in syntax. 
+        SCSS uses mostly the same syntax of CSS while Sass takes away curly braces and semi-colons. 
+        In both you can use the additional features that Sass provides.
+        The following shows the syntactic differences.
     </p>
-    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo.
-        Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-        Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+    <p>If you use any coding language you know what a variable is. 
+        So I won’t go too in depth with this. 
+        Essentially Sass finally allows you to define variables so that if you decide to change say a color you don’t have to change it 1000 times. 
+        You can just change your primary color variable in one place and you’re good to go
     </p>
-    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo.
-        Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-        Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+    <p>Partials are Sass or Scss files that have an underscore in the front of the filename.
+        For example. “_test.scss”. What does this do? 
+        It denote’s that this particular file should not be turned into CSS when the time comes. 
+        These files will contain snippets of CSS that can then be imported by other SCSS files.
     </p>
-    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo.
-        Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-        Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+    <p>This is a great way to modularize your CSS and keep things easier to maintain. 
+        For example you may want to store variables that will be used in multiple files. 
+        This is the way to do it.
+        Mixins
+        Mixins are interesting because they add a coding language-like feature. You will immediately recognize what I mean upon seeing the code:
     </p>
-    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo.
-        Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-        Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+    <p>Instead of typing out “rotate(30deg)” 3 times. 
+        You can create what essentially feels like a function and sort of acts like one. 
+        You pass in the property to the transform() mixin.
+        To use this piece of code, you must use the “@include” keyword.
+        More info if you click here.
     </p>
-    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo.
-        Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-        Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+    <p>Extend/Inheritance & Operators
+        I will talk about these in Part 2 as they are a bit more involved. 
+        These are some of the most useful features in SCSS so please follow and I will be posting this blog next week!
+        Please follow me on Twitter @thedrewprint and find me on LinkedIn at Andrew Richards. Thanks for reading!
     </p>
-    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo.
-        Atqui causae gloriatur ius te, id agam omnis evertitur eum.
-        Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+    <p>In CSS you cannot nest. Let’s take a look at these two selectors. 
+        There is nothing terribly wrong with this. But we are repeating code.
     </p>
 </div>
 </body>
